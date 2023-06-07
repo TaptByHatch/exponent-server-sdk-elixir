@@ -105,8 +105,10 @@ defmodule ExponentServerSdk.PushNotificationTest do
       #     "YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY" => %{"status" => "ok"}
       #   }}
       expected = {:ok, %{}}
-
-      assert expected == PushNotification.get_receipts(ids)
+      actual = PushNotification.get_receipts(ids)
+      # IO.inspect(expected, label: "expected:")
+      # IO.inspect(actual, label: "actual:")
+      assert expected == actual
     end)
   end
 

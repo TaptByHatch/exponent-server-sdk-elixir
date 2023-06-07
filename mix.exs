@@ -24,10 +24,10 @@ defmodule ExponentServerSdk.Mixfile do
       {:httpoison, "~> 1.8"},
       {:poison, "~> 3.1"},
       {:dialyze, "~> 0.2.1", only: [:dev, :test]},
-      {:credo, "~> 0.10.0", only: [:dev, :test]},
-      {:mock, "~> 0.3.2", only: :test},
+      {:credo, "~> 1.7", only: [:dev, :test]},
+      {:mock, "~> 0.3.0", only: :test},
       {:ex_doc, ">= 0.0.0", only: [:dev, :test]},
-      {:inch_ex, ">= 0.0.0", only: [:dev, :test]},
+      {:inch_ex, github: "rrrene/inch_ex", only: [:dev, :test]}
     ]
   end
 
